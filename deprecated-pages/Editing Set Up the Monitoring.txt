@@ -1,0 +1,23 @@
+This section deals with the monitoring configuration regarding to which components of the software are analyzed and afterwards visualized.
+
+1. Set Up Kieker
+
+1.1 Download the monitoring component from [here](https://build.se.informatik.uni-kiel.de/jenkins/job/kieker-monitoring/job/kieker/job/master/lastSuccessfulBuild/artifact/build/libs/kieker-1.14-SNAPSHOT-aspectj.jar).
+1.2 Download 
+
+1. The monitoring configuration file **aop.xml** resides in the folder `META-INF` which is stored in your application server’s (lib) folder. 
+
+   In our example the file aop.xml resides in the file C:\Program" "files\Apache" "Software" "Foundation\Tomcat" "8.5\lib\explorviz-monitoring.jar.
+
+2. Open the jar file with an extractor for example winzip or winrar. Navigate to the folder **META-INF** and extract the file **aop.xml**.
+   
+    _Hint: You can use an editor to open the file._
+
+3. Open the extracted file **aop.xml** and update the `<include within="*"/>` statement according to your needs. For instance replace it with: `<include within="com.ibatis..*" />` to monitor only method calls in the com.ibatis package and its subpackages. Add further `<include within="more.packages..*“/>` statements below to include more than one package. The mentioned statement and especially the last advice is shown in the picture below.
+
+![aop](https://github.com/ExplorViz/Docs/blob/master/images/aop.png)
+
+4. After modifying the file just replace it in the jar file.
+	
+   _Hint: The server on which ExplorViz is monitored has to be terminated._
+	         _In case of authorization problems look into the [troubleshooting](https://github.com/ExplorViz/Docs/wiki/Troubleshooting)._
