@@ -1,0 +1,16 @@
+`DEPRECATED documentation`
+
+This documentation adresses ExplorViz Legacy. For our new architecture, please visit the [backend](https://github.com/ExplorViz/explorviz-backend) and [frontend](https://github.com/ExplorViz/explorviz-frontend).
+
+***
+You need a server to monitor a java application with ExplorViz. The following steps generally decribe how to install and configure a server on which ExplorViz is visualized.
+
+1. Download [ ExplorViz Binaries](https://www.explorviz.net/download.php).
+2. Download and install [Java Runtime Environment (JRE, Java Runtime)](https://java.com/de/download/).
+	
+   _Hint: You have to rename the destination directory if there is already a directory containing parts of Java Runtime Environment._ 
+3. First Copy the file ROOT.war from ExplorViz Binaries to your application server (webapps). 
+Then copy the file explorviz-monitoring.jar to your server’s lib folder.
+4. This example illustrates the installation and configuration of an [Apache Tomcat 8.5 Server on windows](https://github.com/ExplorViz/Docs/wiki/Apache-Tomcat-server-on-windows).
+5. Start the server.
+<br />

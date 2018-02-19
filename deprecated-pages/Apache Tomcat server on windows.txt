@@ -1,0 +1,20 @@
+`DEPRECATED documentation`
+
+This documentation adresses ExplorViz Legacy. For our new architecture, please visit the [backend](https://github.com/ExplorViz/explorviz-backend) and [frontend](https://github.com/ExplorViz/explorviz-frontend).
+
+***
+
+The following steps illustrate the installation and configuration of an Apache Tomcat 8.5 Server on windows. The path used in these steps depends on where you installed Apache Tomcat.
+
+1. Download an [Apache Tomcat version](https://tomcat.apache.org) greater or equal 8.5.
+2. Install Apache Tomcat without launching it at the end of the installation, otherwise you have to stop the service later. 
+
+
+   _Hint: Don’t forget to select the correct path to Java Runtime Environment if you changed it in step 2._
+
+3. Copy the file ROOT.war from ExplorViz Binaries to C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps.
+
+4. Copy the file explorviz-monitoring.jar from ExplorViz Binaries to C:\Program Files\Apache Software Foundation\Tomcat 8.5\lib.
+
+5. Delete the folder ROOT in C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps.
+

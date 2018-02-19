@@ -1,0 +1,34 @@
+`DEPRECATED documentation`
+
+This documentation adresses ExplorViz Legacy. For our new architecture, please visit the [backend](https://github.com/ExplorViz/explorviz-backend) and [frontend](https://github.com/ExplorViz/explorviz-frontend).
+
+***
+
+This paragraph shows more configuration options to adapt ExplorViz to your expectations.
+
+1. The ExplorViz configuration file **explorviz.live_trace_processing.default.properties** also resides in the file explorviz-monitoring.jar which is stored in your server’s lib folder. 
+
+   In our example it resides in the file C:\Program" "files\Apache" "Software" "Foundation\Tomcat" "8.5\lib\explorviz-monitoring.jar.
+
+2. Open the jar file with an extractor for example with winzip or winrar. Navigate to the **META-INF** folder and extract the file **explorviz.live_trace_processing.default.properties**.
+
+3. Open the extracted file **explorviz.live_trace_processing.default.properties** and look up the the options in the table below.
+	
+   _Hint: You can use an editor to open the file. If you have formatting problems using windows editor alternatively use WordPad._
+
+4. After modifying the file just replace it in the jar file.
+	
+   _Hint: The server on which ExplorViz is monitored has to be terminated._
+	         _In case of authorization problems look into the [troubleshooting](https://github.com/ExplorViz/Docs/wiki/Troubleshooting)._
+
+
+| Parameter                     | Default Value                | Description                                                                                                                                   |
+|-------------------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| writer_target_ip              | 127.0.0.1                    | Defines the target ip where the analysis component/visualization server is running.                                                           |
+| writer_target_port            | 10133                        | Defines the target port where the analysis component/visualization server is running.                                                         |
+| writer_load_balancing_enabled | false                        | Used for cloud scaling. If true, the writer_target_ip paramter is ignored. Instead the monitoring queries the load balancer for an ip adress. |
+| system_name                   | `<UNKNOWN-SYSTEM>`                          | The name of the system belonging to the application                                                                                           |
+| ip_address                    | one ip address of the server | The IP address of the server where the application is running                                                                                 |
+| host_name                     | hostname of the server       | The hostname of the server where the application is running                                                                                   |
+| application_name              | `<UNKNOWN-APPLICATION>`                            | The displayed name of the application                                                                                                         |
+| programming_language          | Java                         | The programming language of the application  

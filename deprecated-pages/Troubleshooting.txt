@@ -1,0 +1,6 @@
+If you don't have permission to change the file explorviz-monitoring.jar take the following steps:
+1. Move the file explorviz-monitoring.jar out of the actual directory
+
+2. Replace the modified files in explorviz-monitoring.jar.
+
+3.  Move the file explorviz-monitoring.jar back to the original directory.

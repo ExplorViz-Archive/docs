@@ -1,0 +1,45 @@
+`DEPRECATED documentation`
+
+This documentation adresses ExplorViz Legacy. For our new architecture, please visit the [backend](https://github.com/ExplorViz/explorviz-backend) and [frontend](https://github.com/ExplorViz/explorviz-frontend).
+
+***
+
+The following sections describe how to monitor a java application in two different ways
+### Start monitoring java applications with Eclipse:
+1. Click right on your project, go to **Run as** and select **Run Configuration**.
+2. Open the tab **Arguments** and add the following instruction to the category **VM arguments**:
+    
+    _-javaagent: yourpath\lib\explorviz-monitoring.jar_
+    
+    **important:** _yourpath_ has to contain the absolute path to the file explorviz-monitoring.jar which resides in                                                         your server’s lib folder.
+
+    In our example it looks like this:
+
+    _-javaagent:C\Programme\Apache" "Software" "Foundation\Tomcat" „8.5\lib\explorviz-monitoring.jar_
+
+![eclipse](https://github.com/ExplorViz/Docs/blob/master/images/eclipse.png)
+
+3. Run the main class with the new configuration.
+4. Start your Chrome Browser and navigate to [http://127.0.0.1:8080](http://127.0.0.1:8080).
+5. Get access to ExplorViz by clicking **Sign In** without adding any login data.
+6. Navigate to the tab **Visualization** and monitor your application.
+
+	_Hint: It might take a few seconds until your application is monitored. Furthermore relaunch the monitored application if the data stream was incomplete._
+
+### Start monitoring java applications with windows command-line:
+1. Export your project as an executable jar file. For details see [this documentation ](https://github.com/ExplorViz/Docs/wiki/Creating-an-executable-jar-file).
+2. Open the command-line and enter following instruction:
+    
+    _java -javaagent: yourpath\lib\explorviz-monitoring.jar -jar jarpath\filename.jar_
+
+    _yourpath_ has to contain the absolute path to the file explorviz-monitoring.jar which resides in your server’s lib folder. jarpath has to contain the absolute path to the target jar file.
+
+    In our example it looks like this:
+
+    _java -javaagent:C:\Program" "files\Apache" "Software" "Foundation\Tomcat" "8.5\lib\explorviz-monitoring.jar -jar jarpath\filename.jar_
+
+3. Start your Chrome Browser and navigate to [http://127.0.0.1:8080](http://127.0.0.1:8080).
+4. Get access to ExplorViz by clicking **Sign In** without adding any login data.
+5. Navigate to the tab **Visualization** and monitor your application.
+   
+   _Hint: It might take a few seconds until your application is monitored. Furthermore relaunch the monitored application if the data stream was incomplete._

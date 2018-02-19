@@ -1,0 +1,9 @@
+## Exporting a java program from Eclipse as an executable jar file:
+
+1. Click right on your project, refresh it and select export.
+2. Open the category **Java**, select **Runnable JAR file** and click next like in the picture below.
+
+![jar](https://github.com/ExplorViz/Docs/blob/master/images/jar.png)
+
+3. Choose a destination directory and a filename.jar.
+4. Select the main class in the launch configuration and finish the export by clicking finish.

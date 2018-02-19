@@ -1,0 +1,16 @@
+`DEPRECATED documentation`
+
+This documentation adresses ExplorViz Legacy. For our new architecture, please visit the [backend](https://github.com/ExplorViz/explorviz-backend) and [frontend](https://github.com/ExplorViz/explorviz-frontend).
+
+***
+
+The following section describes how to monitor the Start Monitoring Test App. 
+
+1. Start your Chrome Browser and navigate to [http://localhost:8888](http://localhost:8888).
+2. Get access to ExplorViz by clicking **Sign In** without adding any login data.
+3. You can use the **Start Monitoring Test App** to get input as shown in the picture below.
+   
+   _Hint: If you want to monitor your own source code, take the steps in the user's guide and start with [installing and configuring a server](https://github.com/ExplorViz/Docs/wiki/Installing-and-configuring-the-server) on which ExplorViz is monitored._
+
+![run-menu](https://github.com/ExplorViz/Docs/blob/master/images/run-menu.png)
+   
